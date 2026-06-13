@@ -33,14 +33,12 @@
 
   var chevron = '<svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="2 4 6 8 10 4"/></svg>';
 
-  var logo1x = r + 'INTRA2017K2B/PNG HORIZONTAL/1x/HCOLORAsset 1.png';
-  var logo2x = r + 'INTRA2017K2B/PNG HORIZONTAL/2x/HCOLORAsset 1@2x.png';
   var logo3x = r + 'INTRA2017K2B/PNG HORIZONTAL/3x/HCOLORAsset 1@3x.png';
   var logoFallback = "this.style.display='none'; this.parentElement.querySelector('.nav-logo-text').style.display='flex';";
 
   var html =
     '<a href="' + r + 'index.html" class="nav-logo">' +
-      '<img src="' + logo1x + '" srcset="' + logo2x + ' 2x, ' + logo3x + ' 3x" alt="Intra Group" onerror="' + logoFallback + '" />' +
+      '<img src="' + logo3x + '" width="131" height="38" alt="Intra Group" onerror="' + logoFallback + '" />' +
       '<span class="nav-logo-text"><span>INTRA</span><span>GROUP</span></span>' +
     '</a>' +
     '<ul class="nav-links">' +
