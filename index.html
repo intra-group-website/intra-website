@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intra Group | Bankruptcy | DIFC Liquidation | Auditing | Dubai</title>
+  <meta name="description" content="Intra Group is an alliance of CPAs, Arbiters and Financial, Accounting, Banking and Real Estate Experts providing UAE businesses with value-added solutions since 1995." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue: #1870b8;
+      --blue-dark: #125a96;
+      --grey: #686870;
+      --grey-light: #f5f6f8;
+      --white: #ffffff;
+      --text: #1a1a2e;
+      --text-light: #555;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* ── NAVIGATION ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: var(--white);
+      border-bottom: 1px solid #e8eaed;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5%;
+      height: 72px;
+    }
+
+    .nav-logo {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+      text-decoration: none;
+    }
+    .nav-logo span:first-child {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--blue);
+      letter-spacing: 0.04em;
+    }
+    .nav-logo span:last-child {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--grey);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--grey);
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--blue); }
+
+    .nav-cta {
+      background: var(--blue);
+      color: var(--white) !important;
+      padding: 0.5rem 1.2rem;
+      border-radius: 4px;
+      transition: background 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--blue-dark) !important; color: var(--white) !important; }
+
+    /* ── HERO ── */
+    #home {
+      padding-top: 72px;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0d4f8a 0%, var(--blue) 60%, #2990d8 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: var(--white);
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    .hero-content { max-width: 780px; }
+
+    .hero-eyebrow {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      opacity: 0.75;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero-title {
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-title em {
+      font-style: normal;
+      opacity: 0.7;
+    }
+
+    .hero-sub {
+      font-size: 1.1rem;
+      opacity: 0.85;
+      max-width: 580px;
+      margin: 0 auto 2.5rem;
+      font-weight: 300;
+    }
+
+    .hero-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+    .btn-primary {
+      background: var(--white);
+      color: var(--blue);
+      padding: 0.85rem 2rem;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+
+    .btn-outline {
+      border: 2px solid rgba(255,255,255,0.6);
+      color: var(--white);
+      padding: 0.85rem 2rem;
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .btn-outline:hover { background: rgba(255,255,255,0.1); border-color: white; }
+
+    .hero-stats {
+      display: flex;
+      gap: 3rem;
+      justify-content: center;
+      margin-top: 4rem;
+      padding-top: 2.5rem;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      flex-wrap: wrap;
+    }
+    .stat-item { text-align: center; }
+    .stat-number { font-size: 2rem; font-weight: 700; }
+    .stat-label { font-size: 0.8rem; opacity: 0.7; letter-spacing: 0.05em; margin-top: 0.25rem; }
+
+    /* ── SECTIONS ── */
+    section { padding: 6rem 5%; }
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 0.75rem;
+    }
+    .section-title {
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 1.2rem;
+      line-height: 1.2;
+    }
+    .section-sub {
+      font-size: 1rem;
+      color: var(--text-light);
+      max-width: 580px;
+      margin-bottom: 3rem;
+    }
+
+    /* ── ABOUT ── */
+    #about { background: var(--grey-light); }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .about-text p {
+      color: var(--text-light);
+      margin-bottom: 1.2rem;
+      font-size: 1rem;
+    }
+
+    .about-highlights {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .highlight-card {
+      background: var(--white);
+      border-left: 4px solid var(--blue);
+      padding: 1.2rem 1.5rem;
+      border-radius: 0 6px 6px 0;
+    }
+    .highlight-card h4 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 0.3rem;
+    }
+    .highlight-card p {
+      font-size: 0.88rem;
+      color: var(--text-light);
+    }
+
+    /* ── SERVICE OVERVIEW CARDS ── */
+    #services-overview { background: var(--white); }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .service-card {
+      border: 1px solid #e8eaed;
+      border-radius: 8px;
+      padding: 2rem;
+      transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+      cursor: default;
+    }
+    .service-card:hover {
+      border-color: var(--blue);
+      box-shadow: 0 8px 32px rgba(24,112,184,0.1);
+      transform: translateY(-3px);
+    }
+    .service-icon {
+      width: 48px;
+      height: 48px;
+      background: #e8f2fc;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.2rem;
+      font-size: 1.4rem;
+    }
+    .service-card h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .service-card p {
+      font-size: 0.88rem;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+    .service-link {
+      display: inline-block;
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--blue);
+      text-decoration: none;
+    }
+    .service-link:hover { text-decoration: underline; }
+
+    /* ── DETAILED SERVICES ── */
+    #services { background: var(--grey-light); }
+
+    .services-detail-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .detail-card {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 1.8rem;
+    }
+    .detail-card h3 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--blue);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid #e8f2fc;
+    }
+    .detail-card ul { list-style: none; }
+    .detail-card ul li {
+      font-size: 0.88rem;
+      color: var(--text-light);
+      padding: 0.4rem 0;
+      padding-left: 1.1rem;
+      position: relative;
+    }
+    .detail-card ul li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--blue);
+      font-size: 0.75rem;
+    }
+
+    /* ── BANKRUPTCY HIGHLIGHT ── */
+    #bankruptcy {
+      background: linear-gradient(135deg, #0d4f8a, var(--blue));
+      color: var(--white);
+      text-align: center;
+    }
+    #bankruptcy .section-label { color: rgba(255,255,255,0.6); }
+    #bankruptcy .section-title { color: var(--white); margin: 0 auto 1.2rem; max-width: 700px; }
+    #bankruptcy .section-sub { color: rgba(255,255,255,0.8); margin: 0 auto 2.5rem; }
+
+    .bankruptcy-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      max-width: 900px;
+      margin: 0 auto 2.5rem;
+    }
+    .bk-item {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 6px;
+      padding: 1.2rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    /* ── CONTACT ── */
+    #contact { background: var(--white); }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .contact-info h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      align-items: flex-start;
+    }
+    .contact-item-icon {
+      width: 40px;
+      height: 40px;
+      background: #e8f2fc;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1rem;
+    }
+    .contact-item-text { font-size: 0.9rem; color: var(--text-light); }
+    .contact-item-text strong { display: block; color: var(--text); font-size: 0.85rem; margin-bottom: 0.2rem; }
+
+    .contact-form { display: flex; flex-direction: column; gap: 1rem; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+    .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+    .form-group label { font-size: 0.82rem; font-weight: 500; color: var(--text); }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      padding: 0.7rem 0.9rem;
+      border: 1px solid #d1d5db;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      font-family: inherit;
+      color: var(--text);
+      transition: border-color 0.2s;
+      outline: none;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus { border-color: var(--blue); }
+    .form-group textarea { resize: vertical; min-height: 100px; }
+
+    .btn-submit {
+      background: var(--blue);
+      color: var(--white);
+      border: none;
+      padding: 0.85rem 2rem;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-family: inherit;
+    }
+    .btn-submit:hover { background: var(--blue-dark); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #0d1a2e;
+      color: rgba(255,255,255,0.6);
+      text-align: center;
+      padding: 2rem 5%;
+      font-size: 0.85rem;
+    }
+    footer a { color: rgba(255,255,255,0.6); text-decoration: none; }
+    footer a:hover { color: white; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      nav { padding: 0 4%; }
+      .nav-links { display: none; }
+      .about-grid,
+      .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .form-row { grid-template-columns: 1fr; }
+      section { padding: 4rem 5%; }
+      .hero-stats { gap: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#home" class="nav-logo">
+      <span>INTRA</span>
+      <span>GROUP</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services-overview">Services</a></li>
+      <li><a href="#bankruptcy">Bankruptcy</a></li>
+      <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Established 1995 · Dubai, UAE</p>
+      <h1 class="hero-title">An Alliance of <em>Financial &</em> Legal Experts</h1>
+      <p class="hero-sub">Intra Group brings together Certified Public Accountants, Arbiters and Financial, Accounting, Banking and Real Estate Experts — delivering value-added solutions to the UAE business community.</p>
+      <div class="hero-actions">
+        <a href="#services-overview" class="btn-primary">Our Services</a>
+        <a href="#contact" class="btn-outline">Get in Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-number">30+</div>
+          <div class="stat-label">Years of Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">10+</div>
+          <div class="stat-label">Practice Areas</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">UAE</div>
+          <div class="stat-label">Courts Registered</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">DIFC</div>
+          <div class="stat-label">Approved Liquidators</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="section-label">About Intra Group</p>
+        <h2 class="section-title">30 Years of Trust &amp; Excellence</h2>
+        <p>With 30 years of experience since 1995, our Chairman and all our staff have distinguished qualifications and extensive experience in External/Internal Audit, Management Accounting, Risk Management, Financial Restructuring, and Corporate Governance.</p>
+        <p>The efforts of all our associates are directly focused on creating a trust-based relationship with every client — because every client is important to the group.</p>
+        <p>Today, Intra Group is a highly diversified enterprise. We pursue boundless dreams by accepting the challenges that others prefer to avoid, and believe that a strong will and limitless effort can overcome any obstacle.</p>
+      </div>
+      <div class="about-highlights">
+        <div class="highlight-card">
+          <h4>Registered with UAE Courts</h4>
+          <p>Bankruptcy experts, liquidators, and expert witnesses registered with Dubai Courts, DIFC, and all major UAE jurisdictions.</p>
+        </div>
+        <div class="highlight-card">
+          <h4>Major Banking Clients</h4>
+          <p>Counting some of the biggest banks in the UAE as clients, and a key partner on Dubai Courts' Al Hasilah initiative.</p>
+        </div>
+        <div class="highlight-card">
+          <h4>Multidisciplinary Team</h4>
+          <p>CPAs, arbiters, legal experts, real estate professionals and financial advisors — all under one roof.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE OVERVIEW CARDS -->
+  <section id="services-overview">
+    <div style="max-width:1100px; margin:0 auto;">
+      <p class="section-label">What We Do</p>
+      <h2 class="section-title">Our Core Practices</h2>
+      <p class="section-sub">Four integrated practice areas delivering comprehensive financial, legal and advisory solutions to businesses across the UAE.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">📊</div>
+        <h3>Audit + Assurance</h3>
+        <p>Providing Accounting, External &amp; Internal Audits, advisory services, and VAT preparation for companies of all sizes.</p>
+        <a href="#services" class="service-link">Learn more →</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">⚖️</div>
+        <h3>Experts</h3>
+        <p>Consulting for Law Firms, Citizens &amp; Courts in UAE including Dubai Courts &amp; DIFC as Expert Witnesses in Accounting, Banking &amp; Real Estate.</p>
+        <a href="#services" class="service-link">Learn more →</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔄</div>
+        <h3>Recovery + Restructuring</h3>
+        <p>Trusted by major UAE banks and Dubai Courts for outsourcing Debt Recovery and Restructuring through the Al Hasilah initiative.</p>
+        <a href="#services" class="service-link">Learn more →</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🏢</div>
+        <h3>Asset Management + Brokerage</h3>
+        <p>Managing a diverse portfolio of real estate across Dubai, providing Real Estate consultancy, brokerage and property management.</p>
+        <a href="#services" class="service-link">Learn more →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETAILED SERVICES -->
+  <section id="services">
+    <div style="max-width:1100px; margin:0 auto;">
+      <p class="section-label">Full Service Range</p>
+      <h2 class="section-title">Everything We Offer</h2>
+      <p class="section-sub">From audit and assurance to bankruptcy and property management — our capabilities span the full spectrum of financial and legal advisory.</p>
+    </div>
+    <div class="services-detail-grid">
+      <div class="detail-card">
+        <h3>Audit + Assurance</h3>
+        <ul>
+          <li>Internal and External Audits</li>
+          <li>Financial Statement Audit</li>
+          <li>Balance Sheet Audit</li>
+          <li>Annual Report Audit</li>
+          <li>Profit and Loss Statement Audit</li>
+          <li>Cash Flow Statement Audit</li>
+        </ul>
+      </div>
+      <div class="detail-card">
+        <h3>AML</h3>
+        <ul>
+          <li>Specialized anti-money laundering reports</li>
+          <li>Clear summaries for judicial and regulatory authorities</li>
+        </ul>
+      </div>
+      <div class="detail-card">
+        <h3>VAT + Corporate Tax</h3>
+        <ul>
+          <li>VAT process consulting</li>
+          <li>VAT Software implementation</li>
+          <li>Process Transformation</li>
+        </ul>
+      </div>
+      <div class="detail-card">
+        <h3>Bankruptcy</h3>
+        <ul>
+          <li>Bankruptcy Experts Registered with Courts</li>
+          <li>Trustee Services</li>
+          <li>Negotiating with Creditors</li>
+          <li>Bankruptcy Consultation Services</li>
+        </ul>
+      </div>
+      <div class="detail-card">
+        <h3>Expert Reports</h3>
+        <ul>
+          <li>Accounting, Banking and Real Estate Experts</li>
+          <li>Registered with Courts, RERA and DIFC Courts</li>
+          <li>Consultancy for Law Firms and Clients</li>
+          <li>Pre-filing advice for Police and/or Court cases</li>
+        </ul>
+      </div>
+      <div class="detail-card">
+        <h3>Liquidation</h3>
+        <ul>
+          <li>Approved liquidators by UAE Courts and DIFC</li>
+          <li>DAFZA, Jebel Ali, Dubai Silicon Oasis approved</li>
+          <li>Court Appointed liquidators</li>
+          <li>Trustee Services</li>
+          <li>Inheritance &amp; Corporate Dispute Oversight</li>
+        </ul>
+      </div>
+      <div class="detail-card">
+        <h3>Arbitration</h3>
+        <ul>
+          <li>Registered with EMAC</li>
+          <li>Registered with Sharjah Chamber of Commerce</li>
+          <li>Registered with DIFC</li>
+          <li>Registered with Dubai Chamber of Commerce (DIAC)</li>
+        </ul>
+      </div>
+      <div class="detail-card">
+        <h3>Debt Collection + Restructuring</h3>
+        <ul>
+          <li>Debt Recovery for Major UAE Banks</li>
+          <li>Debt Recovery for Corporate Clients</li>
+          <li>Filing Police Cases</li>
+          <li>Debt Restructuring and Mediation</li>
+        </ul>
+      </div>
+      <div class="detail-card">
+        <h3>Corporate Finance</h3>
+        <ul>
+          <li>Consultancy for Corporate clients</li>
+          <li>Access to Finance for Corporate clients</li>
+        </ul>
+      </div>
+      <div class="detail-card">
+        <h3>Property Brokerage + Consultancy</h3>
+        <ul>
+          <li>Prime Real Estate opportunities</li>
+          <li>Exclusive Property Investment</li>
+          <li>Sale/Buy Side advisory</li>
+          <li>Property Valuation</li>
+        </ul>
+      </div>
+      <div class="detail-card">
+        <h3>Asset Management</h3>
+        <ul>
+          <li>Property Management Services</li>
+          <li>Property Maintenance</li>
+          <li>Property Security</li>
+          <li>Leasing Activities</li>
+          <li>Tenant Management</li>
+          <li>Ejari Management</li>
+          <li>Monthly Reporting to Owners</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANKRUPTCY HIGHLIGHT -->
+  <section id="bankruptcy">
+    <p class="section-label">Specialist Practice</p>
+    <h2 class="section-title">Bankruptcy &amp; Insolvency Experts</h2>
+    <p class="section-sub">Registered bankruptcy experts and court-appointed trustees with deep experience navigating UAE insolvency law across all major jurisdictions.</p>
+    <div class="bankruptcy-grid">
+      <div class="bk-item">Registered Bankruptcy Experts</div>
+      <div class="bk-item">Court-Appointed Trustees</div>
+      <div class="bk-item">Creditor Negotiation</div>
+      <div class="bk-item">DIFC Liquidation</div>
+      <div class="bk-item">Restructuring Advisory</div>
+      <div class="bk-item">Expert Witness Services</div>
+    </div>
+    <a href="#contact" class="btn-primary">Speak to a Specialist</a>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div style="max-width:1000px; margin:0 auto 3rem;">
+      <p class="section-label">Get in Touch</p>
+      <h2 class="section-title">Contact Intra Group</h2>
+      <p class="section-sub">Reach out to discuss how we can support your business.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Our Office</h3>
+        <div class="contact-item">
+          <div class="contact-item-icon">📍</div>
+          <div class="contact-item-text">
+            <strong>Address</strong>
+            4th Floor, Multaqa Avenue 1 Building,<br>Mirdif, Dubai — Office A.401 S-3
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">📞</div>
+          <div class="contact-item-text">
+            <strong>Phone</strong>
+            <a href="tel:+97142206244">+971 4 220 6244</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">✉️</div>
+          <div class="contact-item-text">
+            <strong>Email</strong>
+            <a href="mailto:info@intra.ae">info@intra.ae</a>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="your@email.com" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="service">Service of Interest</label>
+          <select id="service">
+            <option value="">Select a service...</option>
+            <option>Audit + Assurance</option>
+            <option>Bankruptcy &amp; Insolvency</option>
+            <option>Expert Witness / Court Reports</option>
+            <option>Liquidation</option>
+            <option>Debt Recovery &amp; Restructuring</option>
+            <option>Property Brokerage</option>
+            <option>Asset Management</option>
+            <option>Corporate Finance</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Tell us about your situation..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Intra Group. All rights reserved. · <a href="mailto:info@intra.ae">info@intra.ae</a> · <a href="tel:+97142206244">+971 4 220 6244</a></p>
+  </footer>
+
+</body>
+</html>
